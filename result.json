@@ -1,0 +1,32 @@
+Note: Unnecessary use of -X or --request, POST is 
+Note: already inferred.
+*   Trying 127.0.0.1:5000...
+* Established connection to 127.0.0.1 (127.0.0.1 port 5000) from 127.0.0.1 port 34300 
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0* using HTTP/1.x
+> POST /api/v1/inventory/product HTTP/1.1
+> Host: 127.0.0.1:5000
+> User-Agent: curl/8.20.0
+> Accept: */*
+> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4MDc5ODczNiwianRpIjoiZThiNWQ5MTAtNDgzYy00MmE1LTk0YzctNTRkMzA5M2MxMTQ5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im9wZXJhZG9yX2FkbWluIiwibmJmIjoxNzgwNzk4NzM2LCJjc3JmIjoiOTA5ODY2YjAtZWViMS00YWE0LWIyMzktNWVmZDgyYjg0MzdmIiwiZXhwIjoxNzgwNzk5NjM2LCJ0ZW5hbnRfaWQiOjEwNX0.EZIc1Fm-jGes5hsTjwNhNejVlvzhasutM75R-Dvcb4k
+> Content-Type: application/json
+> Content-Length: 88
+> 
+} [88 bytes data]
+* upload completely sent off: 88 bytes
+< HTTP/1.1 404 NOT FOUND
+< Server: Werkzeug/3.1.8 Python/3.13.13
+< Date: Sun, 07 Jun 2026 02:18:56 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 207
+< Connection: close
+< 
+{ [207 bytes data]
+100    295 100    207 100     88  34164  14523                              0100    295 100    207 100     88  33702  14327                              0100    295 100    207 100     88  33263  14141                              0
+* shutting down connection #0
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
